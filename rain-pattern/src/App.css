@@ -17,7 +17,8 @@
   gap: 2px;
   /* Space between cells */
   margin: 20px auto;
-  background-color: black;
+  background: transparent;
+  /* background-color: black; */
   border: 2px solid #ff6699;
   border-radius: 8px;
   width: max-content;
@@ -32,4 +33,17 @@
   /* Default transparent */
   transition: background-color 0.1s linear;
   /* Smooth fading effect */
+}
+
+/* Add color-changing animation */
+@keyframes colorChange {
+  25% {
+    background: linear-gradient(180deg, #FFFACD 0%, rgba(0, 0, 0, 0) 100%);
+  }
+  50% {
+    background: linear-gradient(180deg, rgba(204, 204, 255, 1) 0%, rgba(0, 0, 0, 0) 100%);
+  }
+  100% {
+    background: linear-gradient(180deg, #99FFFF 0%, rgba(0, 0, 0, 0) 100%);
+  }
 }

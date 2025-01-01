@@ -52,7 +52,8 @@ const App = () => {
               key={`${rowIndex}-${colIndex}`}
               className="cell"
               style={{
-                backgroundColor: `rgba(255, 0, 255, ${cell / 10})`, // Intensity-based color
+                background: `linear-gradient(180deg, rgba(0, 255, 240, ${cell / 10}) 0%, rgba(0, 0, 0, 0) 100%)`,
+                animation: cell > 0 ? "colorChange 2s infinite alternate" : "none", // Smooth color-changing animation
               }}
             />
           ))
